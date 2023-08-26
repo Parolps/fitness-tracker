@@ -127,7 +127,7 @@ subset[["acc_r", "gyr_r"]].plot(subplots=True)
 # --------------------------------------------------------------
 # Temporal abstraction
 # --------------------------------------------------------------
-
+df_squared.drop(["duration"], axis=1, inplace=True)
 df_temporal = df_squared.copy()
 NumAbs = NumericalAbstraction()
 
